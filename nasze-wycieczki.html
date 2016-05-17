@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>No name</title>
+
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+	<link href="./css/animate.css" rel="stylesheet">
+	<link href="./css/buttons.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	
+
+</head>
+
+
+<body id = "podstrona1">
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top animated fadeInDown" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand animated fadeInLeft" href="file:///C:/Users/Mi%C5%82osz/Downloads/projekt-praktyki-16.05.2016/index.html" style="font-size:20px;">N<i class="fa fa-ban" style="margin-left: 2px;font-size: 18px;"></i>
+ Name</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right animated fadeInLeft">
+                    <li>
+                        <a href="file:///C:/Users/Mi%C5%82osz/Downloads/projekt-praktyki-16.05.2016/index.html">O nas</a>
+                    </li>
+                    <li>
+                        <a href="#">Warunki podróży</a>
+                    </li>
+                    <li>
+                        <a href="#">Ważne informacje</a>
+                    </li>
+					<li>
+                        <a href="#">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+	
+	<header>
+		<div class = "container-fluid pd-0 text-center img-responsive" id ="i-wycieczki">
+			<div class = "row">
+				<div class = "col-md-12 animated bounceIn">
+					<h2 class = "animated fadeInLeft">NASZE WYCIECZKI</h2>
+					<p class = "animated fadeInRight n-wycieczki">Każdy znajdzie coś dla siebie !</p>
+					<a href = "#nasze-wycieczki" class ="btn btn-lg btn-primary animated fadeInUp">Dowiedz się więcej</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<a name = "nasze-wycieczki"></a>
+	<section class = "text-center img-responsive" >
+		<div class = "container-fluid pd-0">
+			<div class = "row">
+				<div class = "col-md-6 thumbnails">
+					<div id = "p-opcja">
+						<h2 class>Polska w zasięgu ręki</h2>
+						<a href = "file:///C:/Users/Mi%C5%82osz/Downloads/projekt-praktyki-16.05.2016/polska-w-zasiegu-reki.html" class ="btn btn-lg btn-default top-space">Oferta</a>
+					</div>
+				</div>
+				<div class = "col-md-6">
+					<div id = "d-opcja">
+						<h2>Kraków i Warszawa</h2>
+					</div>
+				</div>
+			</div>
+			<div class = "row">
+				<div class = "col-md-6">
+					<div id = "t-opcja">
+						<h2>Boże Narodzenie</h2>
+					</div>
+				</div>
+				<div class = "col-md-6">
+					<div id = "c-opcja">
+						<h2>Wielkanoc</h2>
+					</div>
+				</div>
+			</div>
+			<div class = "row">
+				<div class = "col-md-12">
+					<div id = "piata-opcja">
+						<h2>Wyjazdy konferencyjne</h2>
+					</div>
+				</div>
+		</div>
+	</section>
+	
+	<footer>
+		<section>
+			<div class = "container text-center">
+				<p id = "p-fot">Copyright by Sławomir-Miłosz 2016r.</p>	
+			<div class = "row">
+				<div class = "col-md-12">
+					<ul class = "list-inline">
+						<li><a href = "#" class = "fa fa-instagram fa-fw fa-3x"></a></li>
+						<li><a href = "#" class = "fa fa-facebook fa-fw fa-3x"></a></li>
+						<li><a href = "#" class = "fa fa-twitter fa-fw fa-3x"></a></li>
+					</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+	</footer>
+    
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="./js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/noframework.waypoints.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+
+
+    function menudown(){
+
+	   $(".navbar-custom").css({
+		
+            "background": "rgba(0, 0, 0, 0.7)"
+        
+        }).removeClass("animated fadeInUp").addClass("animated fadeInDown");
+    
+        /*$(".navbar-brand").css({
+        
+            "color": "#222222"
+        
+        });*/
+
+    }
+      
+	  
+    function menuup(){
+
+	   $(".navbar-custom").css({
+		
+		  "background": "none",
+          "color": "lemonchiffon"
+        
+       }).removeClass("animated fadeInDown").addClass("animated fadeInUp");
+    
+       $(".navbar-brand").css({
+        
+          "color": "#ffffff"
+        
+       });
+
+    }
+
+    var waypoint = new Waypoint({
+	
+	   element: document.getElementById('handler-example'),
+	   handler: function(direction) {
+        if(direction == 'down'){
+	
+		  menudown();
+		
+        } else {
+
+		  menuup();
+        
+
+        }
+
+    }
+  
+    })
+    
+    
+
+    var waypoint2 = new Waypoint({
+        element: document.getElementById('section1'),
+        handler: function() {
+            $("#wycieczki-szkolne").addClass("animated bounceIn")
+        }
+    })
+
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,558 @@
+/*
+ * Start Bootstrap - Full Slider HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+@import url(https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Montserrat|Hammersmith+One|Patrick+Hand|Average+Sans|Pontano+Sans|Kanit:400,500|Rambla:400,700&subset=latin,latin-ext);
+
+html,
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#podstrona1{
+	background-color: black;
+	height: 100%;
+}
+
+.top-space{
+	margin-top: 20px;
+}
+.pd-0{
+	margin: 0px;
+	padding: 0px;
+}
+
+h2 {
+	color: #F5F5F5;
+	font-weight: bold;
+	font-size: 6em;
+	font-family: "Lato", Helvetica, Arial, sans-serif;	
+}
+
+.primary-btn {
+  background-color: transparent;
+  padding: 15px 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  min-width: 225px;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .primary-btn {
+    padding: 10px 20px;
+    min-width: 200px;
+  }
+}
+@media (max-width: 550px) {
+  .primary-btn {
+    padding: 8px 10px;
+    min-width: 140px;
+    font-size: 14px;
+  }
+}
+.primary-btn:after {
+  content: '';
+  position: relative;
+  display: inline-block;
+  width: 14px;
+  height: 19px;
+  vertical-align: sub;
+  margin-left: 10px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.primary-btn.dark {
+  border: 1px solid #2d2d2f;
+  color: #2d2d2f;
+}
+.primary-btn.dark:after {
+  background: url("http://http://tern.travel/wp-content/uploads/css/more-dark-icon.svg") no-repeat;
+  background-size: 36px auto;
+  background-position: -22px center;
+}
+.primary-btn.dark:hover::after {
+  background-position: 0px center;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.primary-btn.light {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+.primary-btn.light:after {
+  background: url("http://http://tern.travel/wp-content/uploads/css/more-light-icon.svg") no-repeat;
+  background-size: 36px auto;
+  background-position: -22px center;
+}
+.primary-btn.light:hover::after {
+  background-position: 0px center;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+
+.podpis{
+	font-size: 3em;
+}
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.navbar-custom {
+    color:#ffffff;
+  	background: rgba(0, 0, 0, 0.7);
+    background: transparent;
+    font-family: 'Kanit', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+	
+}
+  
+.navbar-custom .navbar-nav > li > a {
+  	color:#fff;
+}
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    /*color: #ffffff;*/
+	background:none;
+}
+      
+.navbar-custom .navbar-nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    /*background-color: #b71c1c;*/
+    background-color: none;
+    background: none;
+    color: lemonchiffon;
+}
+      
+.navbar-custom .navbar-brand {
+  	color:#eeeeee;
+}
+.navbar-custom .navbar-toggle {
+  	background-color:#eeeeee;
+}
+.navbar-custom .icon-bar {
+  	background-color:#33aa33;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 100%;
+}
+
+.info-group {
+  display: table;
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .info-group {
+    display: block;
+  }
+}
+.info-group .img-block,
+.info-group .txt-block {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  width: 50%;
+  text-align: left;
+}
+@media (min-width: 993px) {
+  .info-group .img-block,
+  .info-group .txt-block {
+    height: 500px;
+  }
+}
+@media (max-width: 992px) {
+  .info-group .img-block,
+  .info-group .txt-block {
+    width: 100%;
+    display: block;
+  }
+}
+.info-group .img-block {
+  overflow: hidden;
+}
+.info-group .img-block img {
+  min-width: 100%;
+  max-width: 100%;
+  margin: 0;
+  height: auto;
+}
+@media (min-width: 992px) {
+  .info-group .img-block img {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    max-width: none;
+  }
+}
+@media (min-width: 993px) {
+  .info-group .img-block.right {
+    float: right;
+  }
+}
+@media (min-width: 993px) {
+  .info-group .img-block.left {
+    float: left;
+  }
+}
+.info-group .txt-block {
+  padding: 20px 130px 40px;
+  position: relative;
+  background-color: #ffffff;
+}
+@media (min-width: 993px) {
+  .info-group .txt-block {
+    display: table;
+  }
+}
+@media (max-width: 1500px) {
+  .info-group .txt-block {
+    padding: 20px 90px 40px;
+  }
+}
+@media (max-width: 1400px) {
+  .info-group .txt-block {
+    padding: 20px 50px 40px;
+  }
+}
+@media (max-width: 1200px) {
+  .info-group .txt-block {
+    padding: 40px;
+  }
+}
+@media (max-width: 992px) {
+  .info-group .txt-block {
+    max-width: 750px;
+    margin: 0px auto;
+  }
+}
+@media (min-width: 993px) {
+  .info-group .txt-block .valign {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+.info-group .txt-block h3 {
+  margin-bottom: 5px;
+  margin-top: 0px;
+}
+.info-group .txt-block .info-by {
+  font-size: 17px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  display: block;
+  color: #2c2c2e;
+}
+.info-group .txt-block .summary {
+  font-size: 17px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: #2c2c2e;
+  margin-bottom: 40px;
+}
+.info-group .txt-block:before {
+  content: '';
+  position: absolute;
+  top: 75px;
+  border-style: solid;
+}
+@media (max-width: 992px) {
+  .info-group .txt-block:before {
+    display: none;
+  }
+}
+@media (min-width: 993px) {
+  .info-group .txt-block.left {
+    float: left;
+  }
+}
+.info-group .txt-block.left:before {
+  right: -75px;
+  border-width: 43px 0px 43px 75px;
+  border-color: transparent transparent transparent #ffffff;
+}
+.info-group .txt-block.right:before {
+  left: -75px;
+  border-width: 43px 75px 43px 0;
+  border-color: transparent #ffffff transparent transparent;
+}
+#opinie{
+	background: #FFEB3B;
+	opacity: 0.9;
+	color: white;
+	min-height: 500px;
+}
+.space{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+.opinions-up{
+  margin-bottom: 20px;
+}
+.opinions-mid{
+  display: block;
+  position: relative;
+  max-width: 400px;
+  margin: auto;
+}
+
+.opinions-down{
+  max-width: 400px;
+  min-height: 250px;
+  margin: 20px auto;
+  background-color: rgba(0,0,0,0.7);
+  text-align: center;
+  color: white;
+}
+.opinions-down p {
+  font-size: 20px;
+  padding: 20px;
+}
+
+h4{
+  font-size: 30px;
+}
+
+#about-company{
+	background: #01579B;
+}
+
+#p-abo{
+	color: white;
+	font-size: 26px;
+	padding: 50px 50px 50px 50px;
+}
+
+footer {
+	padding-top: 50px;
+	min-height: 200px;
+	background-color: #616161;
+	color: white;
+    
+}
+#p-fot{
+	font-size: 26px;
+}
+
+.list-inline li a{
+
+	color: white;
+	text-decoration: none;
+	background: #525051;
+	border-radius: 50%;
+	line-height: 50px;
+	
+}
+
+.fa-instagram:hover{
+	background-color: #D99D2E;
+}
+
+.fa-facebook:hover {
+	background-color: #3d5b99;
+}
+
+.fa-twitter:hover {
+	background-color: #00aced;
+}
+
+
+#p-opcja{
+	background: url('../images/polska.jpg') center no-repeat;
+	background-size: cover;
+	min-height: 500px;
+	padding-top: 170px;
+	margin-right: -15px;
+}
+
+#d-opcja{
+	background: url('../images/warszawa.jpg') center no-repeat;
+	background-size: cover;
+	min-height: 500px;
+	padding-top: 170px;
+	margin-left: -15px;
+}
+
+#t-opcja{
+	background: url('../images/boze.jpg') center center no-repeat;
+	background-size: cover;
+	min-height: 500px;
+	padding-top: 170px;
+	margin-right: -15px;
+	margin-top: -10px;
+}
+
+#c-opcja{
+	background: url('../images/wielkanoc.jpg') center center no-repeat;
+	background-size: cover;
+	min-height: 500px;
+	padding-top: 170px;
+	margin-left: -15px;
+	margin-top: -10px;
+}
+
+#piata-opcja{
+	background: url('../images/wyjazdy-konf.jpg') center center no-repeat;
+	background-size: cover;
+	min-height: 500px;
+	padding-top: 170px;
+	margin-top: -10px;
+	margin-bottom:-10px;
+}
+
+
+
+#i-wycieczki{
+	background: url('../images/podstrona1.jpg') center center no-repeat;
+	background-size: cover;
+	min-height: 1000px;
+	padding-top: 400px;
+}
+.n-wycieczki{
+	font-size: 28px;
+	color: white;
+	
+}
+
+#zasieg-reki{
+	background: url('../images/polska-w-zasiegu-reki.jpg') center center no-repeat;
+	background-size: cover;
+	min-height: 1000px;
+	padding-top: 400px;
+	
+}
+
+#pie-opcja{
+	background: url('../images/stadion.jpg');
+	background-size: cover;	
+	min-height: 1000px;
+	padding-top: 170px;
+}
+
+#dru-opcja{
+	background: url('../images/kazimierz.jpg') center;
+	background-size: cover;
+	padding-top: 170px;
+	min-height: 1000px;
+	padding-bottom: 170px;
+	
+}
+
+#trz-opcja{
+	background: url('../images/zamosc.jpg');
+	background-size: cover;
+	min-height: 600px;
+	padding-top: 170px;
+	padding-bottom: 170px;
+	
+}
+
+#czw-opcja{
+	background: url('../images/winiarnia.jpg');
+	background-size: cover;
+	min-height: 1000px;
+	padding-top: 170px;
+	padding-bottom: 170px;
+}
+
+#pia-opcja{
+	background: url('../images/zalipie.jpg');
+	background-size: cover;
+	min-height: 1000px;
+	padding-top: 170px;
+	padding-bottom: 170px;
+	
+}
+
+#szo-opcja{
+	background: url('../images/krakow.jpg');
+	background-size: cover;
+	min-height: 800px;
+	padding-top: 170px;
+	padding-bottom: 170px;
+}
+
+#sio-opcja{
+	background: url('../images/wieliczka.jpg');
+	background-size: cover;
+	min-height: 800px;
+	padding-top: 170px;
+	padding-bottom: 170px;
+	
+}
+
+#pie-opcja{
+	background: url('../images/stadion.jpg');
+	background-size: cover;
+	min-height: 600px;
+	padding-top: 170px;
+	
+}
+
+#pie-opcja{
+	background: url('../images/stadion.jpg');
+	background-size: cover;
+	min-height: 600px;
+	padding-top: 170px;
+	
+}
+
+.dystans{
+	padding-top: 50px;
+	font-size: 30px;
+	color: white;
+}
+
